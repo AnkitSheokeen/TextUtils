@@ -45,7 +45,7 @@ const handleOnChange = (event) => {
     <>
     
     <div className='container' style={{color: props.mode==='dark'?'white':'black'}}>
-        <h1>{props.heading}</h1>
+        <h1>Try TextUtils - word counter, character counter, remove extra spaces</h1>
         <div className="mb-3">
             <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'grey':'white', color: props.mode==='dark'?'white':'black'}} id="myBox" rows="8"></textarea>
         </div>

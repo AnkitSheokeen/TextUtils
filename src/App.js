@@ -32,14 +32,14 @@ function App() {
       })
       setTimeout(() => {
         setAlert(null);
-      }, 1000)
+      }, 1500)
   }
 
 
   return (
     <>
 
-    <NavBar title="Text...Utils" mode={mode} toggleMode={toggleMode}/>
+    <NavBar mode={mode} toggleMode={toggleMode}/>
     <Alert alert ={alert}/>
     
     <div className='container my-3'>
