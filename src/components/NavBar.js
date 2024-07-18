@@ -18,14 +18,20 @@ export default function NavBar(props) {
                 <Link  className="nav-link" to="/about">About</Link>
                 </li>
             </ul>
-            {/* <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button className="btn btn-outline-primary" type="submit">Search</button>
-            </form> */}
-            <div className={`form-check form-switch text-${props.mode==='dark'?'light':'dark'}`}>
+            <div className='d-flex'>
+                <button class="btn bg-primary mx-1" onClick={() => {props.toggleMode('primary')}} style={{height: '30px', width: '30px',cursor:'pointer'}}></button>
+                <button class="btn bg-secondary mx-1"onClick={() => {props.toggleMode('secondary')}} style={{height: '30px', width: '30px',cursor:'pointer'}}></button>
+                <button class="btn bg-success mx-1" onClick={() => {props.toggleMode('success')}} style={{height: '30px', width: '30px',cursor:'pointer'}}></button>
+                <button class="btn bg-danger mx-1" onClick={() => {props.toggleMode('danger')}} style={{height: '30px', width: '30px',cursor:'pointer'}}></button>
+                <button class="btn bg-warning mx-1" onClick={() => {props.toggleMode('warning')}} style={{height: '30px', width: '30px',cursor:'pointer'}}></button>
+                <button class="btn bg-info mx-1" onClick={() => {props.toggleMode('info')}} style={{height: '30px', width: '30px',cursor:'pointer'}}></button>
+                <button class="btn bg-white mx-1" onClick={() => {props.toggleMode('white')}} style={{height: '30px', width: '30px',cursor:'pointer'}}></button>
+                <button class="btn bg-dark mx-1" onClick={() => {props.toggleMode('dark')}} style={{height: '30px', width: '30px',cursor:'pointer'}}></button>
+            </div>
+            {/* <div className={`form-check form-switch text-${props.mode==='dark'?'light':'dark'}`}>
                 <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
                 <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
-            </div>
+            </div> */}
             </div>
         </div>
     </nav>
