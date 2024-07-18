@@ -26,10 +26,9 @@ const handleExtraSpaces = () => {
     props.showAlert("Extra Spaces removed","success");
 }
 const handleCopy = () => {
-    var text = document.getElementById("myBox");
-    text.select();
-    // text.setSelectionRange(0,9999);
-    navigator.clipboard.writeText(text.value);
+    // var text = document.getElementById("myBox");     not needed
+    // text.select();                                   not needed as we are using navigator.clipboard
+    navigator.clipboard.writeText(text);
     document.getSelection().removeAllRanges();
     props.showAlert("Copyed to clipboard","success");
 }
@@ -59,8 +58,8 @@ const handleOnChange = (event) => {
     </div>
     <div className="container my-3" style={{color: props.mode==='dark'?'white':'black'}}>
         <h2>Your text summary</h2>
-        <p>{text.split(" ").filter((element) => {return element.length!==0}).length} words and {text.length} character</p>
-        <p>{ 0.008 * text.split(" ").filter((element) => {return element.length!==0}).length} Minutes to read</p>
+        <p>{text.split(/\s+/).filter((element) => {return element.length!==0}).length} words and {text.length} character</p>
+        <p>{ 0.008 * text.split(/\s+/).filter((element) => {return element.length!==0}).length} Minutes to read</p>
         <h2>Preview</h2>
         <p>{text.length>0?text:"Nothing to preview"}</p>
     </div>
