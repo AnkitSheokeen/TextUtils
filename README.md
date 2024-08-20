@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Text Utils App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Text Utils is a versatile application designed to manipulate and process text. Whether you need to convert, format, or analyze text, this app provides a range of tools to make text management simple and efficient.
 
-In the project directory, you can run:
+---
+## Demo
+![Spendee Header](https://github.com/AnkitSheokeen/TextUtils/blob/main/Demo.png)
+---
+## Features
 
-### `npm start`
+- Text Transformation: Convert text to uppercase, lowercase, or title case.
+- Text Formatting: Remove extra spaces, line breaks, or unwanted characters.
+- Text Analysis: Count characters, words, and sentences to gain insights into your text.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- [npm](https://www.npmjs.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/AnkitSheokeen/TextUtils.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    cd TextUtils
 
-### `npm run eject`
+3. Install the required dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running the APP
+To start the app in development mode, use:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+        npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open http://localhost:3000 in your browser to view the application.
 
-## Learn More
+### Building for production
+To create a production build of the app, use:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        npm run build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The build will be optimized and placed in the build directory, ready for deployment.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Usage
+After starting the application, you can:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    + Enter or paste text into the input area.
+    + Use various tools to transform or analyze the text.
+    + View the results in real-time.
 
-### Making a Progressive Web App
+### Contributing
+Contributions are welcome! Please open an issue or submit a pull request to contribute.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Contact
+For any inquiries, please contact me at ankit2100as@gmail.com.
